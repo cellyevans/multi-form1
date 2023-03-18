@@ -1,3 +1,7 @@
 entrance
 examination
 assigment
+man
+woman
+dog
+girl
