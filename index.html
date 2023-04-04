@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main class="wrapper">
+      <aside class="container-box">
+
+          <div class="step active">
+            <div class="step-down">
+              <span class="step-number">1</span>
+              <div class="step-detail">
+                <h2 class="step-title">Step1</h2>
+                <span>your info</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-down">
+              <span class="step-number">2</span>
+              <div class="step-detail">
+                <h2 class="step-title">Step2</h2>
+                <span>select plan</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-down">
+              <span class="step-number">3</span>
+              <div class="step-detail">
+                <h2 class="step-title">Step3</h2>
+                <span>add-ons</span>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="step">
+            <div class="step-down">
+              <span class="step-number">4</span>
+              <div class="step-detail">
+                <h2 class="step-title">Step4</h2>
+                <span>summary</span>
+              </div>
+            </div>
+
+          </div>
+
+
+      </aside>
+      <section class="container">
+        <section class="form-section default active-section">
+          <div class="header">Personal info</div>
+          <div class="title">
+            please provide your name,email address and your phone number.
+          </div>
+            <form class="form-container" id="main-form">
+              <div class="form-box">
+                <label for="fname"> Name:</label><br />
+                <input
+                  type="name"
+                  id="fname"
+                  name="fname"
+                  placeholder="vanessa mint"
+                />
+              </div>
+
+              <div class="form-box">
+                <label for="email"> Email address</label><br />
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="vanessamint@"
+                />
+              </div>
+
+              <div class="form-box">
+                <label for="number"> Phone number</label><br />
+                <input
+                  type="text"
+                  id="phone"
+                  name="phone"
+                  placeholder="eg +234567890"
+                />
+              </div>
+              <button class="submit" disabled type="button">Next step</button>
+            </form>
+        </section>
+      <!-- PLANS -->
+      <section class="form-section plans">
+        <div class="header">select your plan</div>
+        <div class="title">
+          you have the option of monthly or yearly billing.
+        </div>
+
+        <div class="billing-container">
+          <div class="billing">
+            <div class="option">
+              <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"><g fill="none" fill-rule="evenodd"><circle cx="20" cy="20" r="20" fill="#FFAF7E"/><path fill="#FFF" fill-rule="nonzero" d="M24.995 18.005h-3.998v5.998h-2v-5.998H15a1 1 0 0 0-1 1V29a1 1 0 0 0 1 1h9.995a1 1 0 0 0 1-1v-9.995a1 1 0 0 0-1-1Zm-5.997 8.996h-2v-1.999h2v2Zm2-11.175a2.999 2.999 0 1 0-2 0v2.18h2v-2.18Z"/></g></svg></i></span>
+              <div class="billing-text billing-plan1">Arcade<br />$9/mo</div>
+            </div>
+
+            <div class="option">
+              <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"><g fill="none" fill-rule="evenodd"><circle cx="20" cy="20" r="20" fill="#F9818E"/><path fill="#FFF" fill-rule="nonzero" d="M25.057 15H14.944C12.212 15 10 17.03 10 19.885c0 2.857 2.212 4.936 4.944 4.936h10.113c2.733 0 4.943-2.08 4.943-4.936S27.79 15 25.057 15ZM17.5 20.388c0 .12-.108.237-.234.237h-1.552v1.569c0 .126-.138.217-.259.217H14.5c-.118 0-.213-.086-.213-.203v-1.583h-1.569c-.126 0-.217-.139-.217-.26v-.956c0-.117.086-.213.202-.213h1.584v-1.554c0-.125.082-.231.203-.231h.989c.12 0 .236.108.236.234v1.551h1.555c.125 0 .231.083.231.204v.988Zm5.347.393a.862.862 0 0 1-.869-.855c0-.472.39-.856.869-.856.481 0 .87.384.87.856 0 .471-.389.855-.87.855Zm1.9 1.866a.86.86 0 0 1-.87-.852.86.86 0 0 1 .87-.855c.48 0 .87.38.87.855a.86.86 0 0 1-.87.852Zm0-3.736a.862.862 0 0 1-.87-.854c0-.472.39-.856.87-.856s.87.384.87.856a.862.862 0 0 1-.87.854Zm1.899 1.87a.862.862 0 0 1-.868-.855c0-.472.389-.856.868-.856s.868.384.868.856a.862.862 0 0 1-.868.855Z"/></g></svg></span>
+              <div class="billing-text billing-plan2">advanced<br />$12/mo</div>
+            </div>
+
+            <div class="option">
+              <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"><g fill="none" fill-rule="evenodd"><circle cx="20" cy="20" r="20" fill="#483EFF"/><path fill="#FFF" fill-rule="nonzero" d="M26.666 13H13.334A3.333 3.333 0 0 0 10 16.333v7.193a3.447 3.447 0 0 0 2.14 3.24c1.238.5 2.656.182 3.56-.8L18.52 23h2.96l2.82 2.966a3.2 3.2 0 0 0 3.56.8 3.447 3.447 0 0 0 2.14-3.24v-7.193A3.333 3.333 0 0 0 26.666 13Zm-9.333 6H16v1.333a.667.667 0 0 1-1.333 0V19h-1.333a.667.667 0 0 1 0-1.334h1.333v-1.333a.667.667 0 1 1 1.333 0v1.333h1.333a.667.667 0 1 1 0 1.334Zm7.333 2a2.667 2.667 0 1 1 0-5.333 2.667 2.667 0 0 1 0 5.333ZM26 18.333a1.333 1.333 0 1 1-2.667 0 1.333 1.333 0 0 1 2.667 0Z"/></g></svg></i></span>
+              <div class="billing-text billing-plan3">pro<br />$15/mo</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="switch">
+          <div class="switch-month">monthly</div>
+          <span class="switch-icon"
+            ><i class="fa fa-toggle-on" aria-hidden="true"></i>
+          </span>
+          <div class="switch-year">yearly</div>
+        </div>
+        <div class="step-btn">
+          <button class="submit goback">Goback</button>
+  
+          <button class="submit next-step next1" type="button">Next step</button>
+
+        </div>
+
+      </section>
+
+      <!-- Add ons -->
+      <section class="form-section addons ">
+        <div class="header">pick add-ons</div>
+        <div class="title">add-ons help to enhance your gaming experince.</div>
+
+        <div class="service">
+          <div class="service-container">
+            <input type="checkbox" id="agreement" />
+            <div class="multi-player">
+              multi-playeronline service<br />Access to multiplayer games
+            </div>
+            <span class="games1">+$1/mo</span>
+          </div>
+
+          <div class="service-container">
+            <input type="checkbox" id="agreement" />
+            <div class="multi-player">
+              larger storage<br />Extra 1TB of cloud save
+            </div>
+            <span class="games2">+$2/mo</span>
+          </div>
+
+          <div class="service-container">
+            <input type="checkbox" id="agreement" />
+            <div class="multi-player">
+              customizable profile <br />custom theme on your profile
+            </div>
+            <span class="games3">+$2/mo</span>
+          </div>
+        </div>
+
+        <div class="step-btn">
+          <button class="submit goback">Goback</button>
+  
+          <button class="submit next-step next2" type="button">Next step</button>
+
+        </div>
+      </section>
+
+      <!-- FINISHING UP -->
+      <section class="form-section finishing-up ">
+        <div class="header">Finishing Up</div>
+        <div class="title">
+          Double-check everything looks OK before comfirming.
+        </div>
+        <div class="acarde">
+          <div class="service-container storage">
+            <div class="multi-player play">Acade(monthly)<br />charge</div>
+            <span class="games amount">+$9/mo</span>
+          </div>
+        </div>
+        <div class="contain">
+          <div class="store">
+            <div class="count">online service</div>
+            <span class="counting">+$1/mo</span>
+          </div>
+
+          <div class="store">
+            <div class="count">larger storage</div>
+            <span class="counting">+$2/mo</span>
+          </div>
+          <div class="total">
+            <div class="total-box">
+              <div class="total-contain">Total(per month)</div>
+              <span class="total-amount">+$12/mo</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="step-btn">
+          <button class="submit goback">Goback</button>
+  
+          <button class="submit next-step next3" type="submit">Next step</button>
+
+        </div>
+      </section>
+
+      
+      <!-- Confirming -->
+      <!-- <section class="confirm ">
+        <div class="confirming">
+          <div class="checked-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80"><g fill="none"><circle cx="40" cy="40" r="40" fill="#F9818E"/><path fill="#E96170" d="M48.464 79.167c.768-.15 1.53-.321 2.288-.515a40.04 40.04 0 0 0 3.794-1.266 40.043 40.043 0 0 0 3.657-1.63 40.046 40.046 0 0 0 12.463-9.898A40.063 40.063 0 0 0 78.3 51.89c.338-1.117.627-2.249.867-3.391L55.374 24.698a21.6 21.6 0 0 0-15.332-6.365 21.629 21.629 0 0 0-15.344 6.365c-8.486 8.489-8.486 22.205 0 30.694l23.766 23.775Z"/><path fill="#FFF" d="M40.003 18.333a21.58 21.58 0 0 1 15.31 6.351c8.471 8.471 8.471 22.158 0 30.63-8.47 8.47-22.156 8.47-30.627 0-8.47-8.472-8.47-22.159 0-30.63a21.594 21.594 0 0 1 15.317-6.35Zm9.865 15c-.316.028-.622.15-.872.344l-12.168 9.13-5.641-5.642c-1.224-1.275-3.63 1.132-2.356 2.356l6.663 6.663c.56.56 1.539.63 2.173.156l13.326-9.995c1.122-.816.43-2.993-.956-3.013a1.666 1.666 0 0 0-.17 0Z"/></g></svg>
+          </div>
+          <h2 class="comfirm">Thank You</h2>
+          <p class="confirm-text">
+            Thanks for comfirming your subcription! we hope you have fun using
+            our platform.If you ever need support feel free to email us at
+            support@loremgamig.com
+          </p>
+        </div>
+      </section> -->
+    </main>
+    <script src="./app.js"></script>
+  </body>
+</html>
